@@ -48,23 +48,26 @@
   display: grid;
   position: relative;
   height: 100vh;
-}
-
-@media (min-width: 768px) {
-  .header {
-    margin-block-end: 213px;
-  }
+  border: 1px solid transparent;
 }
 
 @media (max-width: 767px) {
   .header {
     grid-template-rows: 238px 192px 238px;
+    margin-block-end: 62px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-block-end: 437px;
   }
 }
 
 @media (min-width: 1024px) {
   .header {
     grid-template-rows: 319px 130px 319px;
+    margin-block-end: 180px;
   }
 }
 
@@ -238,7 +241,7 @@
 @media (max-width: 767px) {
   .page .header__text {
     inline-size: 355px;
-    height: 117px;
+    block-size: 117px;
     margin-inline-start: 10px;
     margin-block-start: 55px;
   }
@@ -246,7 +249,6 @@
 
 @media (min-width: 768px) {
   .page .header__text {
-    margin-block-end: 243px;
     inline-size: 363px;
     margin-inline-start: 385px;
   }
@@ -259,6 +261,10 @@
     inline-size: 491px;
     margin-inline-start: 513px;
   }
+}
+
+.main {
+  border: 1px solid transparent;
 }
 
 .page .title-decor {
@@ -474,7 +480,6 @@
   .section__gallery {
     padding-inline-start: 10px;
     padding-inline-end: 10px;
-    margin-block-end: 326px;
   }
 }
 
@@ -490,7 +495,6 @@
 
 @media (min-width: 768px) {
   .gallery {
-    margin-block-end: 523px;
     grid-template-columns: 230px;
     gap: 20px;
     grid-template-rows: 192px 230px 318px;
@@ -504,7 +508,6 @@
 
 @media (min-width: 1024px) {
   .gallery {
-    margin-block-end: 380px;
     grid-template-columns: 315px;
     gap: 20px;
     grid-template-rows: 260px 315px 428px;
@@ -527,8 +530,8 @@
   .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 96px;
-    margin-block-end: 285px;
     padding-inline-start: 10px;
+    padding-block-start: 327px;
   }
 }
 
@@ -538,7 +541,7 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 99px;
     padding-inline-start: 0;
-    margin-block-end: 462px;
+    padding-block-start: 520px;
   }
 }
 
@@ -547,7 +550,7 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 130px;
     padding-inline-start: 0;
-    margin-block-end: 320px;
+    padding-block-start: 383px;
   }
 }
 
@@ -571,21 +574,21 @@
 
 @media (max-width: 767px) {
   .footer::before {
-    inset-block-end: 1121px;
+    inset-block-end: 570px;
     inset-inline-end: 10px;
   }
 }
 
 @media (min-width: 768px) {
   .footer::before {
-    inset-block-end: 1290px;
+    inset-block-end: 545px;
     inset-inline-end: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .footer::before {
-    inset-block-end: 401px;
+    inset-block-end: 538px;
     inset-inline-end: 20px;
   }
 }
@@ -599,21 +602,21 @@
 
 @media (max-width: 767px) {
   .footer::after {
-    inset-block-start: 347px;
+    inset-block-start: 675px;
     inset-inline-start: 10px;
   }
 }
 
 @media (min-width: 768px) {
   .footer::after {
-    inset-block-start: 515px;
+    inset-block-start: 1037px;
     inset-inline-start: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .footer::after {
-    inset-block-start: 407px;
+    inset-block-start: 786px;
     inset-inline-start: 20px;
   }
 }
