@@ -31,7 +31,6 @@
   }
 }
 
-
 .page.theme_dark .rec::after {
   content: "";
   height: 9px;
@@ -47,6 +46,7 @@
 .page .header {
   display: grid;
   position: relative;
+  height: 100vh;
 }
 
 .page .header::before,
@@ -535,6 +535,7 @@
 
 .footer {
   position: relative;
+  height: 100vh;
 }
 
 .footer::before,
