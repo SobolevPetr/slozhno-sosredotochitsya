@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-image: var(--bg-img);
 }
 
 .page.theme_dark .rec {
@@ -47,6 +48,24 @@
   display: grid;
   position: relative;
   height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-block-end: 213px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    grid-template-rows: 238px 192px 238px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    grid-template-rows: 319px 130px 319px;
+  }
 }
 
 .page .header::before,
@@ -108,7 +127,6 @@
   .page .header__theme-menu {
     justify-self: flex-end;
     margin-block-start: 73px;
-    margin-block-end: 68px;
     padding-inline-end: 10px;
   }
 }
@@ -188,7 +206,6 @@
   .page .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 96px;
-    margin-block-end: 55px;
     padding-inline-start: 10px;
   }
 }
@@ -207,7 +224,6 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 130px;
     padding-inline-start: 0;
-    margin-block-end: 115px;
   }
 }
 
@@ -221,9 +237,10 @@
 
 @media (max-width: 767px) {
   .page .header__text {
-    margin-block-end: 105px;
     inline-size: 355px;
+    height: 117px;
     margin-inline-start: 10px;
+    margin-block-start: 55px;
   }
 }
 
@@ -237,7 +254,8 @@
 
 @media (min-width: 1024px) {
   .page .header__text {
-    margin-block-end: 194px;
+    margin-block-start: 113px;
+    block-size: 71px;
     inline-size: 491px;
     margin-inline-start: 513px;
   }
@@ -553,14 +571,14 @@
 
 @media (max-width: 767px) {
   .footer::before {
-    inset-block-end: 348px;
+    inset-block-end: 1121px;
     inset-inline-end: 10px;
   }
 }
 
 @media (min-width: 768px) {
   .footer::before {
-    inset-block-end: 517px;
+    inset-block-end: 1290px;
     inset-inline-end: 20px;
   }
 }
@@ -581,14 +599,14 @@
 
 @media (max-width: 767px) {
   .footer::after {
-    inset-block-start: 343px;
+    inset-block-start: 347px;
     inset-inline-start: 10px;
   }
 }
 
 @media (min-width: 768px) {
   .footer::after {
-    inset-block-start: 517px;
+    inset-block-start: 515px;
     inset-inline-start: 20px;
   }
 }
