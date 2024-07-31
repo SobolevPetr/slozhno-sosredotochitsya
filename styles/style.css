@@ -54,20 +54,21 @@
 @media (max-width: 767px) {
   .header {
     grid-template-rows: 238px 192px 238px;
-    margin-block-end: 62px;
+    margin-block-end: 40px;
   }
 }
 
 @media (min-width: 768px) {
   .header {
-    margin-block-end: 437px;
+    margin-block-end: 58px;
+    grid-template-rows: 463px 100px 275px;
   }
 }
 
 @media (min-width: 1024px) {
   .header {
-    grid-template-rows: 319px 130px 319px;
-    margin-block-end: 180px;
+    grid-template-rows: 319px 130px 185px;
+    margin-block-end: 58px;
   }
 }
 
@@ -138,7 +139,6 @@
   .page .header__theme-menu {
     justify-self: flex-end;
     margin-block-start: 190px;
-    margin-block-end: 177px;
     padding-inline-end: 20px;
   }
 }
@@ -218,7 +218,6 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 99px;
     padding-inline-start: 0;
-    margin-block-end: 160px;
   }
 }
 
@@ -250,16 +249,17 @@
 @media (min-width: 768px) {
   .page .header__text {
     inline-size: 363px;
-    margin-inline-start: 385px;
+    margin-inline-start: 383px;
+    align-self: flex-end;
   }
 }
 
 @media (min-width: 1024px) {
   .page .header__text {
-    margin-block-start: 113px;
     block-size: 71px;
     inline-size: 491px;
     margin-inline-start: 513px;
+    align-self: flex-end;
   }
 }
 
@@ -531,7 +531,7 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 96px;
     padding-inline-start: 10px;
-    padding-block-start: 327px;
+    padding-block-start: 335px;
   }
 }
 
@@ -574,21 +574,21 @@
 
 @media (max-width: 767px) {
   .footer::before {
-    inset-block-end: 570px;
+    inset-block-end: 585px;
     inset-inline-end: 10px;
   }
 }
 
 @media (min-width: 768px) {
   .footer::before {
-    inset-block-end: 545px;
+    inset-block-end: 920px;
     inset-inline-end: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .footer::before {
-    inset-block-end: 538px;
+    inset-block-end: 658px;
     inset-inline-end: 20px;
   }
 }
@@ -602,7 +602,7 @@
 
 @media (max-width: 767px) {
   .footer::after {
-    inset-block-start: 675px;
+    inset-block-start: 680px;
     inset-inline-start: 10px;
   }
 }
