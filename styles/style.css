@@ -541,7 +541,7 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 99px;
     padding-inline-start: 0;
-    padding-block-start: 520px;
+    padding-block-start: 480px;
   }
 }
 
@@ -550,13 +550,26 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 130px;
     padding-inline-start: 0;
-    padding-block-start: 383px;
+    padding-block-start: 343px;
   }
 }
 
 .footer {
   position: relative;
   height: 100vh;
+  display: grid;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    margin-block-start: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin-block-start: 40px;
+  }
 }
 
 .footer::before,
@@ -581,14 +594,14 @@
 
 @media (min-width: 768px) {
   .footer::before {
-    inset-block-end: 920px;
+    inset-block-end: 959px;
     inset-inline-end: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .footer::before {
-    inset-block-end: 658px;
+    inset-block-end: 700px;
     inset-inline-end: 20px;
   }
 }
@@ -609,14 +622,14 @@
 
 @media (min-width: 768px) {
   .footer::after {
-    inset-block-start: 1037px;
+    inset-block-start: 998px;
     inset-inline-start: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .footer::after {
-    inset-block-start: 786px;
+    inset-block-start: 747px;
     inset-inline-start: 20px;
   }
 }
