@@ -563,12 +563,20 @@
 @media (min-width: 1024px) {
   .footer {
     margin-block-start: 40px;
+    margin-block-end: 60px;
   }
 }
 
 @media (min-width: 768px) {
   .footer {
     margin-block-start: 40px;
+    margin-block-end: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    margin-block-end: 50px;
   }
 }
 
