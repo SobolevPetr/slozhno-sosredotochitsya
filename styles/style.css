@@ -1,11 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-image: var(--bg-img);
+  background-color: var(--bg-color);
 }
 
 .page.theme_dark .rec {
@@ -48,7 +44,9 @@
   display: grid;
   position: relative;
   height: 100vh;
-  border: 1px solid transparent;
+  background-image: var(--bg-img);
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 767px) {
@@ -68,7 +66,6 @@
 @media (min-width: 1024px) {
   .header {
     grid-template-rows: 319px 130px 185px;
-    margin-block-end: 58px;
   }
 }
 
@@ -147,8 +144,7 @@
   .page .header__theme-menu {
     justify-self: center;
     margin-block-start: 19px;
-    margin-inline-start: 19px;
-    margin-block-end: 275px;
+    padding: 0;
   }
 }
 
@@ -217,7 +213,7 @@
   .page .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 99px;
-    padding-inline-start: 0;
+    padding: 0;
   }
 }
 
@@ -225,7 +221,6 @@
   .page .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 130px;
-    padding-inline-start: 0;
   }
 }
 
@@ -261,10 +256,6 @@
     margin-inline-start: 513px;
     align-self: flex-end;
   }
-}
-
-.main {
-  border: 1px solid transparent;
 }
 
 .page .title-decor {
@@ -325,8 +316,7 @@
 
 @media (min-width: 768px) {
   .section {
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
+    padding: 0 20px 0 20px;
     grid-template-columns: 236px auto;
     margin-block-end: 80px;
   }
@@ -335,8 +325,7 @@
 @media (min-width: 768px) {
   .description {
     margin-block-end: 80px;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
+    padding: 0 20px 0 20px;
     grid-template-rows: repeat(4, auto);
     grid-template-columns: repeat(4, 1fr);
     row-gap: 20px;
@@ -563,22 +552,15 @@
 @media (min-width: 1024px) {
   .footer {
     margin-block-start: 40px;
-    margin-block-end: 60px;
   }
 }
 
 @media (min-width: 768px) {
   .footer {
     margin-block-start: 40px;
-    margin-block-end: 60px;
   }
 }
 
-@media (max-width: 767px) {
-  .footer {
-    margin-block-end: 50px;
-  }
-}
 
 .footer::before,
 .footer::after {
