@@ -47,6 +47,7 @@
   background-image: var(--bg-img);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 @media (max-width: 767px) {
