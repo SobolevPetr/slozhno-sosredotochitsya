@@ -34,28 +34,4 @@
     --bg-img: url(/images/cover-image-dark.png);
     --bg-color: #000028;
   }
-
-  .rec {
-    position: absolute;
-    inset-block-start: 9px;
-    inset-inline-end: 38px;
-    text-transform: uppercase;
-    font-family: "IBM Plex Mono", "sant-serif";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    color: var(--add-color);
-  }
-  
-  .rec::after {
-    content: "";
-    height: 9px;
-    width: 9px;
-    border-radius: 50%;
-    background-color: var(--add-color);
-    box-shadow: 0px 0px 4px 2px var(--add-color);
-    position: absolute;
-    inset-inline-start: 43px;
-    inset-block-start: 8px;
-  }
 }
