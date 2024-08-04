@@ -406,7 +406,6 @@
 }
 
 .link:focus-visible {
-  outline: none;
   outline: var(--hover-color) solid 1px;
 }
 
@@ -554,10 +553,9 @@
   display: grid;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 767) {
   .footer {
-    margin-block-start: 40px;
-    min-block-size: 768px;
+    min-block-size: 668px;  
   }
 }
 
@@ -568,9 +566,10 @@
   }
 }
 
-@media (max-width: 767) {
+@media (min-width: 1024px) {
   .footer {
-    min-block-size: 668px;  
+    margin-block-start: 40px;
+    min-block-size: 768px;
   }
 }
 
