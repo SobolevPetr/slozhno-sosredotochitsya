@@ -555,10 +555,8 @@
 
 @media (max-width: 767) {
   .footer {
-    min-block-size: 668px;  
-    
+    min-block-size: 668px;
   }
-
 }
 
 @media (min-width: 768px) {
